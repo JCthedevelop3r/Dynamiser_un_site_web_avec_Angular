@@ -2,10 +2,6 @@
     font-family: 'Comfortaa', sans-serif;
 }
 
-h1 {
-    font-family: 'Bubbleboddy_neue', serif;
-}
-
 .presentation-text {
     text-align: center;
 }
@@ -32,10 +28,6 @@ h1 {
 .card {
     background-color: #f9d0a3;
     border: none;
-}
-
-h2 {
-    font-family: 'Bubbleboddy_neue', serif;
 }
 
 .btn {

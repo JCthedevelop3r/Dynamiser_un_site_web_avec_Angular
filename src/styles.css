@@ -11,3 +11,14 @@
         url('./assets/fonts/Bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype'),
         url('./assets/fonts/Bubbleboddy_neue/BubbleboddyNeue-Thin Trial.ttf') format('truetype');
 }
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Bubbleboddy_neue', serif;
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+}
