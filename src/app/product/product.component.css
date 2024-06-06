@@ -1,0 +1,50 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+img {
+    width: 70%;
+    padding-bottom: 1.5rem;
+}
+
+.border-img {
+    width: 70%;
+    border-bottom: 6px solid #151217;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+p {
+    width: 70%;
+}
+
+.price {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+button {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #da001e;
+    color: #fdd90b;
+    border: 1px solid #da001e;
+    border-radius: .375rem;
+    padding: .375rem .75rem .375rem .75rem;
+}
