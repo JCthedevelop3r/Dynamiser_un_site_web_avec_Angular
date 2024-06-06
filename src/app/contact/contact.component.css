@@ -1,0 +1,64 @@
+h2 {
+    padding-bottom: .5rem;
+}
+
+.contact-us {
+    padding-bottom: 2rem;
+}
+
+label {
+    display: block;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
+select {
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    display: block;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#e-mail {
+    margin-bottom: 1.5rem;
+}
+
+.document-upload {
+    display: inline-block;
+}
+
+#document-upload {
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    font-family: 'Comfortaa', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.submit {
+    background-color: #da001e;
+    color: #fdd90b;
+    border: none;
+    border-radius: 20px;
+}
+
+.div-info {
+    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+    padding-bottom: .5rem;
+}
+
+a {
+    font-family: 'Comfortaa', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.tel-anchor {
+    padding-bottom: 1.5rem;
+}

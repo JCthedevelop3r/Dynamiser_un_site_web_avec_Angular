@@ -1,1 +1,45 @@
-<p>contact works!</p>
+<div class="contact-page container">
+  <section class="contact-us">
+    <h2>Contactez-nous</h2>
+    <form action="#">
+      <label for="subject">Sujet</label>
+      <select name="subject" id="subject">
+        <option value="1">Service client</option>
+      </select>
+      <label for="e-mail">Adresse e-mail</label>
+      <input
+        type="email"
+        name="e-mail"
+        id="e-mail"
+        placeholder="john.doe@example.com"
+      />
+      <label for="document-upload" class="document-upload">Document joint</label
+      ><span>(Optionnel)</span>
+      <!--Demander à chatgpt pour styliser le bouton de cet input-->
+      <input type="file" name="document-upload" id="document-upload" />
+      <label for="message">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Comment pouvons-nous vous aider ?"
+      ></textarea>
+      <input type="submit" value="Envoyer" class="submit" />
+    </form>
+  </section>
+  <section>
+    <h2>Informations</h2>
+    <address>
+      <p>
+        AU PETIT VILLAGE <br />
+        Boutique en ligne <br />
+        France
+      </p>
+      <div class="div-info">Appelez-nous :</div>
+      <a href="tel:0606060606" class="tel-anchor">06.06.06.06.06</a>
+      <div class="div-info">Envoyez-nous un mail :</div>
+      <a href="mailto:contact@aupetitvillage.fr"
+        >contact&#64;aupetitvillage.fr</a
+      >
+    </address>
+  </section>
+</div>
