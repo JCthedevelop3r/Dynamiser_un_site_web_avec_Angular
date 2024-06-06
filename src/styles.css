@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Bubbleboddy_neue";
+    src: url('./assets/fonts/Bubbleboddy_neue/BubbleboddyNeue-Bold-Trial.woff'),
+        url('./assets/fonts/Bubbleboddy_neue/BubbleboddyNeue-ExtraBold-Trial.woff'),
+        url('./assets/fonts/Bubbleboddy_neue/bubbleboddyneue-light-trial.woff'),
+        url('./assets/fonts/Bubbleboddy_neue/bubbleboddyneue-regular-trial.woff'),
+        url('./assets/fonts/Bubbleboddy_neue/bubbleboddyneue-thin-trial.woff');
+    src: url('./assets/fonts/Bubbleboddy_neue/BubbleboddyNeue-Bold Trial.ttf') format('truetype'),
+        url('./assets/fonts/Bubbleboddy_neue/BubbleboddyNeue-ExtraBold Trial.ttf') format('truetype'),
+        url('./assets/fonts/Bubbleboddy_neue/bubbleboddyneue-light trial.ttf') format('truetype'),
+        url('./assets/fonts/Bubbleboddy_neue/bubbleboddyneue-regular trial.ttf') format('truetype'),
+        url('./assets/fonts/Bubbleboddy_neue/bubbleboddyneue-thin Trial.ttf') format('truetype');
+}
