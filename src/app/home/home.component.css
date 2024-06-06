@@ -1,0 +1,44 @@
+.home {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+h1 {
+    font-family: 'Bubbleboddy_neue', serif;
+}
+
+.presentation-text {
+    text-align: center;
+}
+
+.search-input {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    width: 15rem;
+}
+
+.filtrer {
+    background-color: #da001e;
+    color: #fdd90b;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f9d0a3;
+    border: none;
+}
+
+h2 {
+    font-family: 'Bubbleboddy_neue', serif;
+}
+
+.btn {
+    background-color: #da001e;
+    color: #fdd90b;
+}
