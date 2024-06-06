@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    background-color: #f9d0a3;
+}
+
+section {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+img {
+    width: 3rem;
+}
+
+small {
+    font-family: 'Comfortaa', sans-serif;
+}
