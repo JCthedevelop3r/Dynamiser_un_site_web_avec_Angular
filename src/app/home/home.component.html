@@ -1,21 +1,29 @@
 <div class="home-page container">
-  <section class="presentation">
-    <h1>Découvrez nos figurines faites main!</h1>
-    <p class="presentation-text">
-      Chez nous, c'est tout un village de figurines de petits gaulois qui vous
-      attend. Tous les fans des aventures d'Astérix et Obélix trouvent leur
-      bonheur Au petit village.
-    </p>
-  </section>
-  <input type="text" class="search-input" placeholder="Rechercher" />
+  <div class="banner">
+    <section class="presentation">
+      <h1>Découvrez nos figurines faites main!</h1>
+      <p class="presentation-text">
+        Chez nous, c'est tout un village de figurines de petits gaulois qui vous
+        attend. Tous les fans des aventures d'Astérix et Obélix trouvent leur
+        bonheur Au petit village.
+      </p>
+    </section>
+    <div class="searching-features">
+      <input type="text" class="search-input" placeholder="Rechercher" />
+      <button class="filtrer col-4">Filtrer</button>
+    </div>
+  </div>
   <!--Futur catalogue en dupliquant cette card-->
-  <section class="catalogue row">
-    <button class="filtrer col-4">Filtrer</button>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="..." />
+  <section class="catalogue row justify-content-center gap-3">
+    <div class="card col-5">
+      <img
+        src="assets/images/figurineasterix.jpg"
+        class="card-img-top bg-img"
+        alt="..."
+      />
       <div class="card-body">
-        <h2 class="card-title">Figurine 1</h2>
-        <p class="card-text">Prix</p>
+        <h2 class="card-title">Figurine Astérix</h2>
+        <p class="price">39,90€</p>
         <button class="btn">Ajouter au panier</button>
       </div>
     </div>
