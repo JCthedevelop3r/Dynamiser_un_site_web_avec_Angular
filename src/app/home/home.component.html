@@ -14,18 +14,15 @@
     </div>
   </div>
   <!--Futur catalogue en dupliquant cette card-->
-  <section class="catalogue row justify-content-center gap-3">
-    <div class="card col-5">
-      <img
-        src="assets/images/figurineasterix.jpg"
-        class="card-img-top bg-img"
-        alt="..."
-      />
-      <div class="card-body">
-        <h2 class="card-title">Figurine Astérix</h2>
-        <p class="price">39,90€</p>
-        <button class="btn">Ajouter au panier</button>
-      </div>
-    </div>
+  <section class="catalogue row justify-content-center gap-2 row-gap-3">
+    <app-card
+      class="col-5"
+      id="card-catalogue"
+      *ngFor="let card of cards; let i = index"
+      [srcImg]="card.srcImg"
+      [altImg]="card.altImg"
+      [cardTitle]="card.cardTitle"
+      [price]="card.price"
+    ></app-card>
   </section>
 </div>

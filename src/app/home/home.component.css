@@ -70,38 +70,8 @@
     padding-top: 2rem;
 }
 
-.card {
-    background-color: #f9d0a3;
-    border: none;
-    border-radius: 0;
-    padding-top: .75rem;
+.col-5 {
+    padding: 0;
 }
 
-.bg-img {
-    background-color: white;
-    border-radius: 0;
-}
-
-.card-body {
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
-    text-align: center;
-}
-
-.card-title {
-    font-size: 1rem;
-}
-
-.price {
-    margin: .5rem;
-}
-
-.btn {
-    font-family: 'Comfortaa', sans-serif;
-    background-color: #da001e;
-    color: #fdd90b;
-    border: 1px solid #da001e;
-    border-radius: .375rem;
-    padding: .375rem .75rem .375rem .75rem;
-    font-size: 0.79rem;
-}
+/*2.399rem*/
