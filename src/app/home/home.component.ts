@@ -12,6 +12,19 @@ export class HomeComponent implements OnInit {
   // provenant du fichier "card.model.ts".
   cards: Card[] = [];
 
+  isClickedAsc: boolean = false;
+  isClickedDesc: boolean = false;
+
+  toggleSortOrder(order: string): void {
+    if (order === 'asc') {
+      this.isClickedAsc = true;
+      this.isClickedDesc = false;
+    } else if (order === 'desc') {
+      this.isClickedAsc = false;
+      this.isClickedDesc = true;
+    }
+  }
+
   constructor(private dataCardService: DataCardService) {}
 
   ngOnInit() {
