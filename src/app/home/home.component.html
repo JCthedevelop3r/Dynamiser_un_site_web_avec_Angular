@@ -9,7 +9,12 @@
       </p>
     </section>
     <div class="searching-features">
-      <input type="text" class="search-input" placeholder="Rechercher" />
+      <input
+        [(ngModel)]="searchText"
+        type="text"
+        class="search-input"
+        placeholder="Rechercher"
+      />
       <div class="dropdown-center col-4">
         <button
           class="dropdown-toggle filtrer"
@@ -34,7 +39,11 @@
     <app-card
       class="col-5"
       id="card-catalogue"
-      *ngFor="let card of cards | sortByPrice : isClickedAsc : isClickedDesc"
+      *ngFor="
+        let card of cards
+          | filterByName : searchText
+          | sortByPrice : isClickedAsc : isClickedDesc
+      "
       [srcImg]="card.srcImg"
       [altImg]="card.altImg"
       [cardTitle]="card.cardTitle"

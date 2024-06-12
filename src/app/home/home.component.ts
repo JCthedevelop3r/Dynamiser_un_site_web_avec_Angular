@@ -12,6 +12,9 @@ export class HomeComponent implements OnInit {
   // provenant du fichier "card.model.ts".
   cards: Card[] = [];
 
+
+  searchText: string = '';
+
   isClickedAsc: boolean = false;
   isClickedDesc: boolean = false;
 
