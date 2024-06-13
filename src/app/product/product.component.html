@@ -1,19 +1,10 @@
 <div class="product-page container">
-  <div class="card">
-    <img
-      src="assets/images/figurineasterix.jpg"
-      class="card-img-top"
-      alt="Figurine de Astérix"
-    />
-    <div class="border-img"></div>
-    <div class="card-body">
-      <h2 class="card-title">Figurine Astérix</h2>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maiores.
-        Dolorem placeat accusamus accusantium temporibus.
-      </p>
-      <div class="price">39,90€</div>
-      <button>Ajouter au panier</button>
-    </div>
-  </div>
+  <app-product-content
+    *ngIf="productContent.length > 0"
+    [srcImg]="productContent[0].srcImg"
+    [altImg]="productContent[0].altImg"
+    [productTitle]="productContent[0].productTitle"
+    [productDescription]="productContent[0].productDescription"
+    [price]="productContent[0].price"
+  />
 </div>

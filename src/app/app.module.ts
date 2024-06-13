@@ -14,6 +14,7 @@ import { DataCardService } from './data-card.service';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { FilterByNamePipe } from './filter-by-name.pipe';
 import { FormsModule } from '@angular/forms';
+import { ProductContentComponent } from './product-content/product-content.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     CardComponent,
     SortByPricePipe,
-    FilterByNamePipe
+    FilterByNamePipe,
+    ProductContentComponent
   ],
   imports: [
     BrowserModule,
