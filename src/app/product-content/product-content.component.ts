@@ -10,5 +10,5 @@ export class ProductContentComponent {
   @Input() altImg: string = '';
   @Input() productTitle: string = '';
   @Input() productDescription: string = '';
-  @Input() price: string = '';
+  @Input() price: number = 0;
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DataCardService } from '../data-card.service';
-import { Card } from '../card/card.model';
+import { ProductsService } from '../products.service';
+import { Products } from '../product-content/product-content.model'
+
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,9 @@ import { Card } from '../card/card.model';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  // Le type de la propriété "cards" correspond au tableau "Card[]"
+  // Le type de la propriété "products" correspond au tableau "Product[]"
   // provenant du fichier "card.model.ts".
-  cards: Card[] = [];
+  products: Products[] = [];
 
   isClickedAsc: boolean = false;
   isClickedDesc: boolean = false;
@@ -27,9 +28,9 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  constructor(private dataCardService: DataCardService) {}
+  constructor(private productsService: ProductsService) {}
 
   ngOnInit() {
-    this.cards = this.dataCardService.dataCard;
+    this.products = this.productsService.dataProducts;
   }
 }

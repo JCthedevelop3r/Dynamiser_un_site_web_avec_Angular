@@ -36,18 +36,18 @@
     </div>
   </div>
   <section class="catalogue row justify-content-center gap-2 row-gap-3">
-    <app-card
+    <app-product-content
       class="col-5"
       id="card-catalogue"
       *ngFor="
-        let card of cards
+        let product of products
           | filterByName : searchText
           | sortByPrice : isClickedAsc : isClickedDesc
       "
-      [srcImg]="card.srcImg"
-      [altImg]="card.altImg"
-      [cardTitle]="card.cardTitle"
-      [price]="card.price"
-    ></app-card>
+      [srcImg]="product.srcImg"
+      [altImg]="product.altImg"
+      [productTitle]="product.productTitle"
+      [price]="product.price"
+    ></app-product-content>
   </section>
 </div>

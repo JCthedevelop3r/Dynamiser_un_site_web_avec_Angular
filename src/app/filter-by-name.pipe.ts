@@ -1,24 +1,24 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Card } from './card/card.model';
-import { DataCardService } from './data-card.service';
+import { Products } from './product-content/product-content.model';
+import { ProductsService } from './products.service';
 
 @Pipe({
   name: 'filterByName'
 })
 export class FilterByNamePipe implements PipeTransform {
 
-  transform(cards: Card[], searchText: string): Card[] {
+  transform(products: Products[], searchText: string): Products[] {
     if (!searchText) {
-      return cards;
+      return products;
     }
 
     searchText = searchText.toLowerCase();
-    return cards.filter(card => {
+    return products.filter(product => {
       // L'expression régulière est utilisée pour ne pas prendre en compte
-      // le premier mot "Figurine" de chaque valeur des clés cardTitle,
+      // le premier mot "Figurine" de chaque valeur des clés productTitle,
       // ainsi que l'espace après le premier mot pour faciliter la recherche  
       // de l'utilisateur.
-      let titleWithoutFirstWord = card.cardTitle.replace(/^[^\s]+\s*/, '').toLowerCase();
+      let titleWithoutFirstWord = product.productTitle.replace(/^[^\s]+\s*/, '').toLowerCase();
       return titleWithoutFirstWord.startsWith(searchText);
     });
   }

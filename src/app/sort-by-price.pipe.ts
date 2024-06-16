@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Card } from './card/card.model';
+import { Products } from './product-content/product-content.model';
 
 @Pipe({
   name: 'sortByPrice'
@@ -7,7 +7,7 @@ import { Card } from './card/card.model';
 export class SortByPricePipe implements PipeTransform {
 
 
-  transform(cards: Card[], isAsc: boolean, isDesc: boolean): Card[] {
+  transform(cards: Products[], isAsc: boolean, isDesc: boolean): Products[] {
     if (isAsc) {
       return cards.sort((a, b) => a.price - b.price);
     } else if (isDesc) {
