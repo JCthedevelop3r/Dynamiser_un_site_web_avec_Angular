@@ -6,25 +6,13 @@ import { Card } from './card/card.model';
 })
 export class SortByPricePipe implements PipeTransform {
 
-  transform(card: Card[], asc: boolean, desc: boolean): Card[] {
-    if(asc) {
-      return card.sort((a:any, b:any) => {
-        if(a.price < b.price) { return -1;
-        } else if(a.price > b.price) {
-        return 1;
-        } else return 0;
-      });
-    } else if(desc) {
-        return card.sort((a:any, b:any) => {
-          if(a.price > b.price) { return -1;
-          } else if(a.price < b.price) {
-          return 1;
-          } else return 0;
-        });
-    } else {
-      return card;
+
+  transform(cards: Card[], isAsc: boolean, isDesc: boolean): Card[] {
+    if (isAsc) {
+      return cards.sort((a, b) => a.price - b.price);
+    } else if (isDesc) {
+      return cards.sort((a, b) => b.price - a.price);
     }
+    return cards;
   }
 }
-
-
