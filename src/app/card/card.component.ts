@@ -9,5 +9,5 @@ export class CardComponent {
   @Input() srcImg: string = '';
   @Input() altImg: string = '';
   @Input() cardTitle: string = '';
-  @Input() price: string = '';
+  @Input() price: number = 0;
 }

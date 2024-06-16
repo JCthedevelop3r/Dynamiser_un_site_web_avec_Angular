@@ -7,7 +7,9 @@
   />
   <div class="card-body">
     <h2 class="card-title" id="card-title">{{ cardTitle }}</h2>
-    <p class="price" id="price">{{ price }}</p>
+    <p class="price" id="price">
+      {{ price | currency : "EUR" : "symbol" : "1.2-2" }}
+    </p>
     <button class="btn-shopping-cart">Ajouter au panier</button>
   </div>
 </div>
