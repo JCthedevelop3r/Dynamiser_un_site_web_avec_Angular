@@ -13,7 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { CardComponent } from './card/card.component';
-import { DataCardService } from './data-card.service';
+import { DataService } from './data.service';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { FilterByNamePipe } from './filter-by-name.pipe';
 import { FormsModule } from '@angular/forms';
@@ -42,7 +42,7 @@ registerLocaleData(localeFr);
   ],
   providers: [
     provideClientHydration(),
-    DataCardService,
+    DataService,
     { provide: LOCALE_ID, useValue: 'fr-FR' }
   ],
   bootstrap: [AppComponent]

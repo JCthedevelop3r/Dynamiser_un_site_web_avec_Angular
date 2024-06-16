@@ -1,14 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Card } from './card/card.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class DataCardService {
+export class DataService {
 
   constructor() { }
-
-  
 
   aboutTitle = "Notre histoire";
   aboutText1 = "Notre passion pour l'univers d'Astérix et Obélix nous a poussés à créer des figurines faites main, capturant l'esprit et les aventures de nos héros gaulois préférés. Chaque pièce est unique et réalisée avec amour.";

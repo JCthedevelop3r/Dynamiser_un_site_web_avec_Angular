@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataCardService } from '../data-card.service';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-about',
@@ -11,12 +11,12 @@ export class AboutComponent implements OnInit{
   aboutText1: string = "";
   aboutText2: string = "";
 
-  constructor(private dataCardService: DataCardService) {}
+  constructor(private dataService: DataService) {}
 
 ngOnInit() {
-  this.aboutTitle = this.dataCardService.aboutTitle;
-  this.aboutText1 = this.dataCardService.aboutText1;
-  this.aboutText2 = this.dataCardService.aboutText2;
+  this.aboutTitle = this.dataService.aboutTitle;
+  this.aboutText1 = this.dataService.aboutText1;
+  this.aboutText2 = this.dataService.aboutText2;
 }
 
 }
