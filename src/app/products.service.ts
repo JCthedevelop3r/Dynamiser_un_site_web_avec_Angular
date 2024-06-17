@@ -10,6 +10,7 @@ export class ProductsService {
 
   dataProducts: Products[] = [
       {
+        id: "1",
         srcImg:"assets/images/figurineasterix.jpg",
         altImg: "Figurine d'Astérix",
         productTitle: "Figurine Astérix",
@@ -18,6 +19,7 @@ export class ProductsService {
       },
   
       {
+        id: "2",
         srcImg:"assets/images/figurineobelixetsontonneau.webp",
         altImg: "Figurine d'Obélix avec un tonneau",
         productTitle: "Figurine Obélix - Obélix et son tonneau",
@@ -26,6 +28,7 @@ export class ProductsService {
       },
   
       {
+        id: "3",
         srcImg:"assets/images/figurineidefix.webp",
         altImg: "Figurine d'Idéfix",
         productTitle: "Figurine Idéfix",
@@ -34,6 +37,7 @@ export class ProductsService {
       },
   
       {
+        id: "4",
         srcImg:"assets/images/figurinepanoramix.jpg",
         altImg: "Figurine de Panoramix",
         productTitle: "Figurine Panoramix",
@@ -42,6 +46,7 @@ export class ProductsService {
       },
   
       {
+        id: "5",
         srcImg:"assets/images/figurineasterixpartoutatis.webp",
         altImg: "Figurine d'Astérix, \"par toutatis\"",
         productTitle: "Figurine Astérix \"par toutatis\"",
@@ -50,6 +55,7 @@ export class ProductsService {
       },
   
       {
+        id: "6",
         srcImg:"assets/images/figurineabraracourcix.jpg",
         altImg: "Figurine d'Abraracourcix",
         productTitle: "Figurine Abraracourcix",
@@ -58,6 +64,7 @@ export class ProductsService {
       },
   
       {
+        id: "7",
         srcImg:"assets/images/figurineassurancetourix.jpg",
         altImg: "Figurine d'Assurancetourix",
         productTitle: "Figurine Assurancetourix",
@@ -66,6 +73,7 @@ export class ProductsService {
       },
   
       {
+        id: "8",
         srcImg:"assets/images/figurineobelixpilealbum.webp",
         altImg: "Figurine de Obélix portant une pile d'album",
         productTitle: "Figurine Obélix - pile d'album",

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ProductComponent } from '../product/product.component';
 
 @Component({
   selector: 'app-product-content',
@@ -11,4 +12,5 @@ export class ProductContentComponent {
   @Input() productTitle: string = '';
   @Input() productDescription: string = '';
   @Input() price: number = 0;
+  @Input() productId: string = '';
 }
