@@ -9,20 +9,46 @@
       </p>
     </section>
     <div class="searching-features">
-      <input type="text" class="search-input" placeholder="Rechercher" />
-      <button class="filtrer col-4">Filtrer</button>
+      <input
+        [(ngModel)]="searchText"
+        type="text"
+        class="search-input"
+        placeholder="Rechercher"
+      />
+      <div class="dropdown-center col-4">
+        <button
+          class="dropdown-toggle filtrer"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Filtrer
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" (click)="toggleSortOrder('asc')">
+            Ordre croissant
+          </li>
+          <li class="dropdown-item" (click)="toggleSortOrder('desc')">
+            Ordre décroissant
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-  <!--Futur catalogue en dupliquant cette card-->
   <section class="catalogue row justify-content-center gap-2 row-gap-3">
-    <app-card
+    <app-product-content
       class="col-5"
       id="card-catalogue"
-      *ngFor="let card of cards; let i = index"
-      [srcImg]="card.srcImg"
-      [altImg]="card.altImg"
-      [cardTitle]="card.cardTitle"
-      [price]="card.price"
-    ></app-card>
+      *ngFor="
+        let product of products
+          | filterByName : searchText
+          | sortByPrice : isClickedAsc : isClickedDesc
+      "
+      [srcImg]="product.srcImg"
+      [altImg]="product.altImg"
+      [productTitle]="product.productTitle"
+      [price]="product.price"
+      [productId]="product.id"
+    ></app-product-content>
   </section>
 </div>

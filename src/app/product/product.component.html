@@ -1,18 +1,13 @@
 <div class="product-page container">
   <div class="card">
-    <img
-      src="assets/images/figurineasterix.jpg"
-      class="card-img-top"
-      alt="Figurine de Astérix"
-    />
+    <img [src]="product.srcImg" class="card-img-top" [alt]="product.altImg" />
     <div class="border-img"></div>
     <div class="card-body">
-      <h2 class="card-title">Figurine Astérix</h2>
-      <p class="card-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, maiores.
-        Dolorem placeat accusamus accusantium temporibus.
-      </p>
-      <div class="price">39,90€</div>
+      <h2 class="card-title">{{ product.productTitle }}</h2>
+      <p class="card-text">{{ product.productDescription }}</p>
+      <div class="price">
+        {{ product.price | currency : "EUR" : "symbol" : "1.2-2" }}
+      </div>
       <button>Ajouter au panier</button>
     </div>
   </div>
