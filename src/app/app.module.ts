@@ -12,7 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
-import { CardComponent } from './card/card.component';
 import { DataService } from './data.service';
 import { SortByPricePipe } from './sort-by-price.pipe';
 import { FilterByNamePipe } from './filter-by-name.pipe';
@@ -30,7 +29,6 @@ registerLocaleData(localeFr);
     AboutComponent,
     ProductComponent,
     ContactComponent,
-    CardComponent,
     SortByPricePipe,
     FilterByNamePipe,
     ProductContentComponent
