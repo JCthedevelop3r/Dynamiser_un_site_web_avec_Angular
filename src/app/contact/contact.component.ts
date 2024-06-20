@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  fileName: string = 'Aucun fichier choisi';
 
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files[0]) {
+      this.fileName = input.files[0].name;
+    }
+  }
 }

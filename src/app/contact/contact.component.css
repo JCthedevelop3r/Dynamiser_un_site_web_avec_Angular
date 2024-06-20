@@ -4,7 +4,9 @@ h2 {
 }
 
 .contact-us {
-    padding-bottom: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+    border: 1px solid #fdd90b;
+    margin-top: .5rem;
 }
 
 label {
@@ -17,6 +19,9 @@ label {
 select {
     font-family: 'Comfortaa', sans-serif;
     margin-bottom: 1.5rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: .5rem;
 }
 
 input {
@@ -26,26 +31,63 @@ input {
 
 #e-mail {
     margin-bottom: 1.5rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: .5rem;
 }
 
 .document-upload {
     display: inline-block;
 }
 
-#document-upload {
+.custom-file-upload {
+    display: flex;
     margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#file-input {
+    display: none;
+}
+
+.custom-file-button {
+    display: inline-block;
+    background-color: #da001e;
+    color: #fdd90b;
+    border: none;
+    padding: 1.2rem .5rem .5rem .5rem;
+    margin: 0;
+    width: 60%;
+    text-align: center;
+}
+
+#file-name {
+    border: 1px solid #555;
+    width: 50%;
+    color: #a5a5a5;
+    text-align: center;
+    padding: .5rem;
 }
 
 textarea {
     font-family: 'Comfortaa', sans-serif;
     margin-bottom: 1.5rem;
+    width: 100%;
+    padding: .5rem;
+    height: 5rem;
 }
 
 .submit {
     background-color: #da001e;
     color: #fdd90b;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    padding: .75rem 1.5rem;
+}
+
+.informations {
+    padding-top: 1rem;
 }
 
 .div-info {
@@ -60,6 +102,6 @@ a {
     color: black;
 }
 
-.tel-anchor {
-    padding-bottom: 1.5rem;
+address .div-info:last-of-type {
+    padding-top: 1rem
 }
