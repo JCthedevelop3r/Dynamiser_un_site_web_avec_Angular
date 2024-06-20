@@ -4,17 +4,19 @@
     class="card-img-top bg-img"
     id="card-img-top"
     [alt]="altImg"
+    [routerLink]="['/accueil/produit', productId]"
   />
   <div class="card-body">
-    <h2 class="card-title" id="card-title">{{ productTitle }}</h2>
+    <h2
+      class="card-title"
+      id="card-title"
+      [routerLink]="['/accueil/produit', productId]"
+    >
+      {{ productTitle }}
+    </h2>
     <p class="price" id="price">
       {{ price | currency : "EUR" : "symbol" : "1.2-2" }}
     </p>
-    <button
-      class="btn-shopping-cart"
-      [routerLink]="['/accueil/produit', productId]"
-    >
-      Ajouter au panier
-    </button>
+    <button class="btn-shopping-cart">Ajouter au panier</button>
   </div>
 </div>

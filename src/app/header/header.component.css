@@ -1,22 +1,78 @@
-nav {
-    background-color: white;
-    border-bottom: 1px solid #151217;
+.container-fluid {
+    padding: 0;
 }
 
-.nav-link {
+.infos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem .5rem 1rem;
+}
+
+.logo {
+    width: 6rem;
+}
+
+.info-tel {
+    margin: 0;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mobile-screen-button {
+    display: inline;
+    width: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #151217;
     font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    color: #da001e;
-    text-align: center;
-    border-top: 1px solid #151217;
+    font-weight: bold;
 }
 
-img {
-    width: 4rem;
+nav {
+    background-color: #F9D0A3;
+    padding: 0;
+    border-top: 1px solid #FDD90B;
 }
 
 .navbar-toggler {
-    border: solid rgb(21, 18, 23);
+    border: solid rgba(21, 18, 23, 0);
+    position: relative;
+    float: left;
+}
+
+.right-icons {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+}
+
+.customer-account {
+    width: 30px;
+    height: 30px;
+}
+
+.shopping-bag {
+    width: 24px;
+    height: 28px;
+    padding: 2px 0;
+}
+
+.nav-item {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    color: #151217;
+    text-align: center;
+}
+
+.nav-link:active {
+    color: #DA001E;
 }
 
 .navbar-toggler-icon {
