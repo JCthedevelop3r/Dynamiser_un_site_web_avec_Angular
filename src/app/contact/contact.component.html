@@ -13,10 +13,15 @@
         id="e-mail"
         placeholder="john.doe@example.com"
       />
-      <label for="document-upload" class="document-upload">Document joint</label
+      <label for="file-input" class="document-upload">Document joint</label
       ><span>(Optionnel)</span>
-      <!--Demander à chatgpt pour styliser le bouton de cet input-->
-      <input type="file" name="document-upload" id="document-upload" />
+      <div class="custom-file-upload">
+        <input type="file" id="file-input" (change)="onFileSelected($event)" />
+        <label for="file-input" class="custom-file-button"
+          >Choisir un fichier</label
+        >
+        <div id="file-name">{{ fileName }}</div>
+      </div>
       <label for="message">Message</label>
       <textarea
         name="message"
@@ -26,7 +31,7 @@
       <input type="submit" value="Envoyer" class="submit" />
     </form>
   </section>
-  <section>
+  <section class="informations">
     <h2>Informations</h2>
     <address>
       <p>
