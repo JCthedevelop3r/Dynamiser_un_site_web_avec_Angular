@@ -64,6 +64,20 @@ nav {
     padding: 2px 0;
 }
 
+#span-counter {
+    display: none;
+    position: absolute;
+    right: 7%;
+    color: white;
+    background-color: #DA001E;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    padding-top: 1.8px;
+}
+
 .nav-item {
     font-family: 'Comfortaa', sans-serif;
     font-weight: bold;

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProductComponent } from '../product/product.component';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-product-content',
@@ -13,4 +13,12 @@ export class ProductContentComponent {
   @Input() productDescription: string = '';
   @Input() price: number = 0;
   @Input() productId: string = '';
+
+  productShoppingBagCounter: number = 0;
+
+  constructor(private dataService: DataService) { }
+
+  addToCart() {
+    this.dataService.showSpan();
+  }
 }
