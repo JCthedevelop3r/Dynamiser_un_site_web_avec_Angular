@@ -14,6 +14,15 @@ section {
     padding-bottom: 1rem;
 }
 
+@media (min-width: 576px) {
+    section {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+}
+
 img {
     width: 3rem;
 }
