@@ -8,3 +8,37 @@ p {
     padding: 0 2rem;
     text-align: justify;
 }
+
+img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        padding: 0 9rem;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        padding: 0 6rem;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
