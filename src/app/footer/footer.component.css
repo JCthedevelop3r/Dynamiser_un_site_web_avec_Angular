@@ -7,6 +7,12 @@ footer {
     background-color: #f9d0a3;
 }
 
+@media (min-width: 1200px) {
+    footer {
+        margin-top: 3rem;
+    }
+}
+
 section {
     width: 65%;
     display: flex;
@@ -17,9 +23,12 @@ section {
 @media (min-width: 576px) {
     section {
         width: 40%;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        width: 20%;
     }
 }
 
