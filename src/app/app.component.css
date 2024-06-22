@@ -5,3 +5,11 @@
 #header-2 {
     display: none;
 }
+
+@media (min-width: 1200px) {
+    #header-2 {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+}
