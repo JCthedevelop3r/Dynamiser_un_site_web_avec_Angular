@@ -148,14 +148,15 @@
 
 @media (min-width: 1200px) {
     .catalogue {
-        padding-top: 4rem;
+        padding-top: 4.5rem;
     }
 }
 
-app-product-content {
-    z-index: 1;
+@media (min-width: 1200px) {
+    app-product-content {
+        z-index: 1;
+    }
 }
-
 
 .col-5 {
     padding: 0;

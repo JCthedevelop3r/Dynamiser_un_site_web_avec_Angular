@@ -9,7 +9,6 @@
     <div class="price">
       {{ product.price | currency : "EUR" : "symbol" : "1.2-2" }}
     </div>
-    <button>Ajouter au panier</button>
+    <button (click)="addToCart()">Ajouter au panier</button>
   </section>
-  <div></div>
 </div>
