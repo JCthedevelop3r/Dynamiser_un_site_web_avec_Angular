@@ -1,14 +1,15 @@
 <div class="product-page container">
-  <div class="card">
-    <img [src]="product.srcImg" class="card-img-top" [alt]="product.altImg" />
+  <div class="div-img">
+    <img [src]="product.srcImg" class="product-img" [alt]="product.altImg" />
     <div class="border-img"></div>
-    <div class="card-body">
-      <h2 class="card-title">{{ product.productTitle }}</h2>
-      <p class="card-text">{{ product.productDescription }}</p>
-      <div class="price">
-        {{ product.price | currency : "EUR" : "symbol" : "1.2-2" }}
-      </div>
-      <button>Ajouter au panier</button>
-    </div>
   </div>
+  <section class="product-content">
+    <h2 class="product-title">{{ product.productTitle }}</h2>
+    <p class="product-text">{{ product.productDescription }}</p>
+    <div class="price">
+      {{ product.price | currency : "EUR" : "symbol" : "1.2-2" }}
+    </div>
+    <button>Ajouter au panier</button>
+  </section>
+  <div></div>
 </div>

@@ -17,6 +17,7 @@ import { SortByPricePipe } from './sort-by-price.pipe';
 import { FilterByNamePipe } from './filter-by-name.pipe';
 import { FormsModule } from '@angular/forms';
 import { ProductContentComponent } from './product-content/product-content.component';
+import { Header2Component } from './header-2/header-2.component';
 
 registerLocaleData(localeFr);
 
@@ -31,7 +32,8 @@ registerLocaleData(localeFr);
     ContactComponent,
     SortByPricePipe,
     FilterByNamePipe,
-    ProductContentComponent
+    ProductContentComponent,
+    Header2Component
   ],
   imports: [
     BrowserModule,
