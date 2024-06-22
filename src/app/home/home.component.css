@@ -130,6 +130,7 @@
 .dropdown-item {
     background-color: #da001e;
     color: #fdd90b;
+    cursor: pointer;
 }
 
 .dropdown-menu .dropdown-item:first-child {

@@ -28,8 +28,13 @@
     }
 }
 
+.card-img-top {
+    cursor: pointer;
+}
+
 .card-title {
     font-size: 1rem;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
